@@ -1,4 +1,4 @@
-Note:i've only refactor those function which were being used in the repository.
+Note: i have only refactored those functions that were being used in the repository.
 
 # Code Review Feedback
 1. **Avoid Direct Access to Env Variables:**
@@ -6,10 +6,10 @@ Note:i've only refactor those function which were being used in the repository.
      ```bash
      php artisan config:cache
      ```
-   -  env('ADMIN_ROLE_ID') is not good approach . Instead, get it from the config file.
+   -  env('ADMIN_ROLE_ID') is not a good approach. Instead, get it from the config file.
 
 2. **Minimize If-Else Chains:**
-   - In BookingRepository Store function you were using two many if else statements. Consider using a switch statement instead of excessive if-else chains for improved readability and maintainability.
+   - In BookingRepository Store function you were using two many if-else statements. Consider using a switch statement instead of excessive if-else chains for improved readability and maintainability.
 
 3. **Utilize Request Classes:**
    - Where applicable, make use of Laravel's Request classes to encapsulate and handle incoming HTTP requests more effectively.
@@ -28,7 +28,7 @@ Note:i've only refactor those function which were being used in the repository.
    - Use PSR coding standards for better code readability and compatibility with the PHP ecosystem.
 
 8. **Pay Attention to Spelling Mistakes:**
-   - Pay attention to spelling mistakes in variable names, comments to ensure professionalism and clarity.
+   - Pay attention to spelling mistakes in variable names, and comments to ensure professionalism and clarity.
 
 9. **Replace old-school array syntax with the shorthand `[]` for improved code aesthetics.**
 
